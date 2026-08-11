@@ -2,6 +2,9 @@
 
 A fully responsive, front-end car dealership website built for **Elite Auto Gallery**, a dealership based in Islamabad, F-8. Designed to feel like a premium product rather than a generic template — dark theme, brass accents, and a smooth, filterable inventory experience.
 
+## 🔗 Live Demo
+[splendid-nougat-0672bc.netlify.app](https://splendid-nougat-0672bc.netlify.app)
+
 ## 📋 Overview
 
 This project showcases a modern dealership website with dynamic inventory filtering, scroll-based animations, and a fully responsive layout — built entirely with vanilla HTML, CSS, and JavaScript (no frameworks, no dependencies).
@@ -19,29 +22,30 @@ This project showcases a modern dealership website with dynamic inventory filter
 
 ## 🛠️ Built With
 
-- **HTML5** — Semantic markup
-- **CSS3** — Custom properties, Grid, Flexbox, no frameworks
-- **Vanilla JavaScript** — DOM manipulation, event delegation, Intersection Observer API
+- **HTML5** (98.7%) — Semantic markup
+- **CSS3** (1.1%) — Custom properties, Grid, Flexbox, no frameworks
+- **JavaScript** (0.2%) — DOM manipulation, event delegation, Intersection Observer API
 - **Google Fonts** — Big Shoulders Display, Archivo, IBM Plex Mono
 
 ## 📁 Project Structure
 
-├── index.html # Main HTML structure
-├── style.css # All styling (design tokens, layout, responsive rules)
-├── script.js # Filtering logic, scroll effects, mobile nav
+```
+├── index.html      # Main HTML structure
+├── style.css       # All styling (design tokens, layout, responsive rules)
+├── script.js       # Filtering logic, scroll effects, mobile nav
 └── README.md
-
+```
 
 ## 🚀 Getting Started
 
 1. Clone the repository
-```bash
+   ```bash
    git clone https://github.com/muhammadmoeed5124-design/internship-project-1.git
-```
+   ```
 2. Navigate into the project folder
-```bash
+   ```bash
    cd internship-project-1
-```
+   ```
 3. Open `index.html` in your browser — no build step or server required
 
 ## 🎯 Key Technical Highlights
