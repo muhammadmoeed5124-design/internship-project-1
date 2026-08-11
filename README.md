@@ -1,208 +1,68 @@
-# 🚗 Khattak Motors
+# Elite Auto Gallery — Car Dealership Landing Page
 
-A modern, responsive car dealership website built with **HTML, CSS, and JavaScript**.
-The project presents a premium automotive showroom experience for **Khattak Motors**, a fictional dealership based in Peshawar, Pakistan.
+A responsive landing page for a car dealership in Islamabad, featuring a filterable inventory grid, sticky header, mobile navigation, and scroll animations. Built with vanilla HTML, CSS, and JavaScript — no frameworks, no dependencies.
 
-## ✨ Features
+**[Live Demo](#)** ← replace with your deployed link (GitHub Pages / Netlify / Vercel)
 
-* 🏎️ Modern car dealership landing page
-* 📱 Fully responsive design for mobile, tablet, and desktop
-* 🚘 Featured vehicle inventory
-* 🔎 Inventory filtering by:
+## Features
 
-  * Body type
-  * Car make
-  * Price range
-* 📋 Vehicle specifications including:
+- 🔍 **Live inventory filtering** — filter cars by body type, make, and price range, all combined in real time
+- 📱 **Fully responsive** — custom layouts for mobile, tablet, and desktop, including a mobile filter drawer and hamburger nav
+- ✨ **Scroll animations** — car cards reveal on scroll using the Intersection Observer API
+- 🎨 **Sticky header** — gains a shadow/blur effect on scroll
+- ♿ **Accessible** — semantic markup, `aria-expanded` states, `prefers-reduced-motion` support
+- 🖋️ **Custom design system** — CSS custom properties for consistent theming (colors, radius, shadows)
 
-  * Model year
-  * Engine capacity
-  * Transmission
-  * Mileage
-  * Price
-* 📲 Mobile navigation menu
-* 🎨 Premium dark automotive-themed UI
-* ✨ Scroll-based card reveal animations
-* 📌 Sticky navigation header
-* 🔄 Resettable inventory filters
-* 📞 Test-drive and enquiry call-to-action buttons
-* 🛠️ Workshop and dealership information
-* 📧 Contact information
-* 📬 Newsletter subscription UI
-* ♿ Basic accessibility considerations such as `aria-labels` and visible focus states
-* ⚡ No frameworks or build tools required
+## Tech Stack
 
-## 🛠️ Technologies Used
+- **HTML5** — semantic structure
+- **CSS3** — custom properties, CSS Grid, Flexbox, responsive breakpoints
+- **Vanilla JavaScript** — DOM manipulation, event delegation, IntersectionObserver
+- **Fonts** — Big Shoulders Display, Archivo, IBM Plex Mono (Google Fonts)
 
-* **HTML5** — Page structure and semantic markup
-* **CSS3** — Responsive layout, animations, styling, and media queries
-* **Vanilla JavaScript** — Navigation, inventory filtering, animations, and dynamic footer year
-* **Google Fonts**
+## Project Structure
 
-  * Big Shoulders Display
-  * Archivo
-  * IBM Plex Mono
-* **Unsplash** — Vehicle and workshop imagery
-
-## 📂 Project Structure
-
-```text
-khattak-motors/
-│
-├── index.html
-├── style.css
-├── script.js
+```
+├── index.html          # Markup and content
+├── style.css           # Styling, layout, responsive design
+├── script.js           # Filtering logic, nav toggle, scroll effects
+├── images/              # Car and hero photos
+│   ├── hero-banner.jpg
+│   ├── toyota-corolla.jpg
+│   ├── honda-civic.jpg
+│   ├── suzuki-alto.jpg
+│   ├── suzuki-cultus.jpg
+│   ├── kia-sportage.jpg
+│   └── hyundai-tucson.jpg
 └── README.md
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
-No installation or dependencies are required.
+No build tools or dependencies required.
 
-### 1. Clone the repository
+1. Clone the repo
+   ```bash
+   git clone https://github.com/yourusername/elite-auto-gallery.git
+   ```
+2. Keep the `images/` folder in the same directory as `index.html`.
+3. Open `index.html` in your browser — that's it.
 
-```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-```
+## What I Focused On
 
-### 2. Open the project
+- Building a working multi-filter system (body type + make + price) with plain JavaScript and `data-*` attributes instead of a framework
+- Structuring CSS with custom properties for a maintainable design system
+- Handling responsive layout shifts (mobile drawer → desktop sidebar) with minimal duplicated code
+- Sourcing and organizing real inventory content (makes, models, specs, and pricing) into a consistent card layout
 
-Navigate into the project directory:
+## Screenshots
 
-```bash
-cd YOUR-REPOSITORY
-```
+*(Add 1–2 screenshots or a short GIF here — this matters a lot for design-heavy projects like this one)*
 
-### 3. Run the website
+## About
 
-Simply open:
+Built by Muhammad Moeed — Full Stack Web Developer.
 
-```text
-index.html
-```
+## License
 
-in your browser.
-
-You can also use **VS Code + Live Server** for a better development experience.
-
-## 🎯 Website Sections
-
-### Hero Section
-
-Introduces Khattak Motors with a prominent call-to-action for viewing the inventory and booking a test drive.
-
-### Featured Inventory
-
-The website currently displays six featured vehicles, including:
-
-* Toyota Corolla Altis Grande
-* Honda Civic Oriel
-* Suzuki Alto VXL AGS
-* KIA Sportage FWD
-* Suzuki Cultus VXL
-* Hyundai Tucson
-
-Each vehicle includes its year, color, engine capacity, transmission, mileage, availability status, and price.
-
-### Inventory Filtering
-
-Users can filter vehicles by:
-
-* **Body Type:** Sedan, Hatchback, SUV
-* **Make:** Toyota, Honda, Suzuki, KIA, Hyundai
-* **Price:** Under Rs 70 Lac / Rs 70 Lac and above
-
-The filtering system is implemented using vanilla JavaScript and dynamically shows or hides matching vehicle cards.
-
-### Why Buy From Us
-
-Highlights three dealership features:
-
-* Certified vehicle inspection
-* Flexible financing
-* Nationwide trade-ins
-
-### Workshop
-
-A dedicated section describing the dealership's workshop and vehicle inspection process.
-
-### About the Developer
-
-The project includes an About section identifying **Muhammad Moeed** as the developer and describing the project as a hands-on web development project.
-
-## 🎨 Design
-
-The interface uses a premium automotive-inspired visual system featuring:
-
-* Dark charcoal backgrounds
-* Brass/gold accent colors
-* Green secondary accents
-* Large automotive-style typography
-* Minimal borders and cards
-* Responsive layouts
-* Subtle hover and scroll animations
-
-The main design tokens and responsive breakpoints are defined in `style.css`.
-
-## 📱 Responsive Design
-
-The layout adapts across different screen sizes:
-
-| Device     | Layout                                         |
-| ---------- | ---------------------------------------------- |
-| 📱 Mobile  | Single-column layout with mobile navigation    |
-| 📲 Tablet  | Two-column vehicle grid                        |
-| 💻 Desktop | Three-column vehicle grid with sidebar filters |
-
-The CSS uses responsive breakpoints at **768px** and **1024px**.
-
-## 🧠 JavaScript Functionality
-
-`script.js` handles the interactive functionality of the website, including:
-
-* Sticky header behavior
-* Mobile menu toggle
-* Mobile filter drawer
-* Body-type filtering
-* Make filtering
-* Price filtering
-* Reset filters
-* Empty inventory state
-* Scroll-reveal animations
-* Automatic copyright year
-
-## 🔮 Future Improvements
-
-Potential improvements for future versions include:
-
-* [ ] Connect inventory to a real database
-* [ ] Add individual vehicle detail pages
-* [ ] Add vehicle search
-* [ ] Add price sorting
-* [ ] Add an actual test-drive booking system
-* [ ] Connect the newsletter form to a backend
-* [ ] Add real social media links
-* [ ] Add Google Maps dealership location
-* [ ] Add customer reviews
-* [ ] Add authentication for dealership staff
-* [ ] Add an admin dashboard for inventory management
-* [ ] Optimize and self-host vehicle images
-* [ ] Add SEO metadata and Open Graph tags
-
-## 👨‍💻 Developer
-
-**Muhammad Moeed**
-
-BS Computer Systems Student
-Embedded Systems & Digital Design
-Full Stack Web Development
-
-This project was created as a hands-on web development project focusing on responsive UI design, frontend development, and interactive functionality.
-
-## 📄 License
-
-This project is intended for educational and portfolio purposes.
-
----
-
-⭐ If you found this project interesting, consider giving the repository a star!
+MIT
