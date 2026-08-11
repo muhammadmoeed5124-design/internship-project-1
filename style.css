@@ -257,7 +257,7 @@
   /* ============ CTA BAND ============ */
   .cta-band{
     background:linear-gradient(135deg, var(--green) 0%, #22301F 100%);
-    border-radius:6px; padding:52px 32px; text-align:center; margin:0 20px;
+    border-radius:6px; padding:52px 32px; text-align:center;
   }
   .cta-band h2{ font-size:clamp(1.8rem,4vw,2.6rem); color:var(--text); }
   .cta-band p{ color:#C9D3C6; max-width:520px; margin:14px auto 26px; }
